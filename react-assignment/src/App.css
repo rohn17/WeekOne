@@ -1,38 +1,101 @@
-.App {
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.app-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== MAIN TITLE ===== */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* ===== CARD STYLE ===== */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== CARD HEADINGS ===== */
+.card h2 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* ===== TEXT ===== */
+p {
+  margin: 6px 0;
+  color: #555;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+}
+
+table td {
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ===== LIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ecf0f1;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ===== USER CARD SPECIAL STYLE ===== */
+.user-card {
+  background-color: #eaf6ff;
+  border-left: 5px solid #3498db;
+}
+
+/* ===== HOVER EFFECT ===== */
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  table th,
+  table td {
+    font-size: 14px;
+    padding: 8px;
   }
 }
